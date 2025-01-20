@@ -6,7 +6,7 @@
 	"scripts": {
 		"format": "prettier -w .",
 		"package": "run build && companion-module-build",
-		"build": "rimraf dist && run build:main",
+		"build": "rimraf dist && yarn build:main",
 		"build:main": "tsc -p tsconfig.build.json",
 		"dev": "tsc -p tsconfig.build.json --watch",
 		"lint:raw": "eslint",
